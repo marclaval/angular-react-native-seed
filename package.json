@@ -1,0 +1,32 @@
+{
+  "name": "angular2-react-native-seed",
+  "version": "0.0.1-alpha.1",
+  "description": "A seed project to create a native mobile application with Angular 2 and React Native",
+  "scripts": {
+    "postinstall": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlaval/angular2-react-native-seed.git"
+  },
+  "keywords": ["Angular2", "seed", "react-native"],
+  "author": "Marc Laval <mlaval>",
+  "license": "Apache License Version 2.0",
+  "bugs": {
+    "url": "https://github.com/mlaval/angular2-react-native-seed/issues"
+  },
+  "homepage": "https://github.com/mlaval/angular2-react-native-seed#readme",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-strip-comments": "^2.2.1",
+    "gulp-typescript": "^2.11.0",
+    "gulp-watch": "~4.3.5",
+    "run-sequence": "~1.1.2",
+    "through2": "~0.6.3"
+  },
+  "dependencies": {
+    "angular2-react-native": "0.0.1-alpha.1"
+  }
+}

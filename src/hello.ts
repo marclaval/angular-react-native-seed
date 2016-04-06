@@ -10,8 +10,7 @@ import {StyleSheet} from 'react-native';
     Welcome to angular2-react-native!
   </Text>
   <Text [styleSheet]="styles.instructions">
-    To show the dev menu, shake the device
-    or press menu button on Android, or cmd + D on iOS
+    To show the dev menu, shake the device or press menu button on Android, or cmd + D on iOS
   </Text>
 </View>
 <Image [styleSheet]="styles.image" [style]="{left: 0}" [source]="angularLogo"></Image>

@@ -20,3 +20,6 @@ Android:
 iOS:
 * `gulp start.ios` to launch the sample on an emulator, and watch sources for auto update (it will fail the first due to initial compilation, simply restart it)
 * OR, `gulp watch` and  open `.dist/app/ngReactNative/ios/ngReactNative.xcodeproj` in Xcode and hit `Run`
+
+## Running tests
+`gulp test.browser` to run tests in Chrome

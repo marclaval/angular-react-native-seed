@@ -1,8 +1,9 @@
 {
   "name": "angular2-react-native-seed",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "A seed project to create a native mobile application with Angular 2 and React Native",
   "scripts": {
+    "test": "gulp test.browser/ci",
     "postinstall": "typings install"
   },
   "repository": {
@@ -23,10 +24,15 @@
     "gulp-strip-comments": "^2.2.1",
     "gulp-typescript": "^2.11.0",
     "gulp-watch": "~4.3.5",
+    "jasmine": "2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
     "run-sequence": "~1.1.2",
+    "systemjs": "^0.19.25",
     "through2": "~0.6.3"
   },
   "dependencies": {
-    "angular2-react-native": "0.0.1-alpha.1"
+    "angular2-react-native": "0.0.1-alpha.2"
   }
 }

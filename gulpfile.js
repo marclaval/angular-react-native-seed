@@ -46,14 +46,14 @@ gulp.task('init', ['!create'], function() {
 gulp.task('!assets', function () {
   return gulp.src(PATHS.sources.assets, {base: './src'}).pipe(gulp.dest(PATHS.app));
 });
-gulp.task('!compile', ['!assets'], function () {
+gulp.task('transpile', ['!assets'], function () {
   return ts2js([PATHS.sources.src], PATHS.app);
 });
 
-gulp.task('!launch.android', ['!compile'], function(done) {
+gulp.task('!launch.android', ['transpile'], function(done) {
   executeInAppDir('react-native run-android', done);
 });
-gulp.task('!launch.ios', ['!compile'], function(done) {
+gulp.task('!launch.ios', ['transpile'], function(done) {
   executeInAppDir('react-native run-ios', done);
 });
 gulp.task('!start.android', ['!launch.android'], function(neverDone) {
@@ -63,7 +63,7 @@ gulp.task('!start.android', ['!launch.android'], function(neverDone) {
 });
 gulp.task('watch', function(neverDone) {
   watch([PATHS.sources.src], function() {
-    runSequence('!compile');
+    runSequence('transpile');
   });
 });
 gulp.task('start.android', ['!start.android', 'watch'], function (neverDone) {

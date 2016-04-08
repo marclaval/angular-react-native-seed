@@ -28,7 +28,8 @@ System.config({
 
     },
     'angular2-react-native' : {
-      defaultJSExtensions: true
+      defaultJSExtensions: true,
+      main: 'testing.js'
     }
   },
   map: {

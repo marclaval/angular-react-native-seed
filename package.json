@@ -28,9 +28,12 @@
     "karma": "^0.13.21",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
+    "protractor": "^3.2.2",
     "run-sequence": "~1.1.2",
     "systemjs": "^0.19.25",
-    "through2": "~0.6.3"
+    "through2": "~0.6.3",
+    "wd": "^0.4.0",
+    "wd-bridge": "^0.0.2"
   },
   "dependencies": {
     "angular2-react-native": "0.0.1-alpha.4"

@@ -125,7 +125,12 @@ function ts2js(path, dest, toSystem) {
       },
       undefined,
       customReporter()));
-  return tsResult.js.pipe(replaceRequire()).pipe(gulp.dest(dest));
+  if (toSystem) {
+    return tsResult.js.pipe(replaceRequire()).pipe(gulp.dest(dest));
+  } else {
+    return tsResult.js.pipe(gulp.dest(dest));
+  }
+  
 }
 
 function customReporter() {

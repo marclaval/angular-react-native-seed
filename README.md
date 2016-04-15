@@ -2,6 +2,9 @@
 
 A seed project to create a native mobile application with Angular 2 and React Native
 
+## General documentation
+http://angular.github.io/react-native-renderer/
+
 ## Preparing your environment
 * Set up React Native for iOS and/or Android following [Getting started](https://facebook.github.io/react-native/docs/getting-started.html) and [Android setup](https://facebook.github.io/react-native/docs/android-setup.htmlt)
 * Clone this repository or a fork of it

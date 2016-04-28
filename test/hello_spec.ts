@@ -36,7 +36,7 @@ describe('Hello', () => {
         );
 
         mock.clearLogs();
-        var target = <Node>fixture.debugElement.children[0].children[1].children[0].children[5].children[0];
+        var target = <Node>fixture.nativeElement.getElementByTestId('Show_More').children[0];
         fireGesture('tap', target);
 
         fixture.detectChanges();

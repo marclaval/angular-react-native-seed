@@ -19,7 +19,7 @@ var PATHS = {
   karma: 'dist/karma',
   app: 'dist/' + APP_NAME,
   modules: [
-    'node_modules/angular2/**/*',
+    'node_modules/@angular/**/*',
     'node_modules/angular2-react-native/**/*',
     'node_modules/hammerjs/**/*',
     'node_modules/reflect-metadata/**/*',

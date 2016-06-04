@@ -114,7 +114,7 @@ gulp.task('test.browser/ci', ['ts2system'], function(done) {
 /**********************************************************************************/
 
 function ts2js(path, dest, toSystem) {
-  var tsResult = gulp.src(path.concat(['typings/main.d.ts']), toSystem? {base: './'} : {})
+  var tsResult = gulp.src(path.concat(['typings/index.d.ts']), toSystem? {base: './'} : {})
     .pipe(typescript({
         noImplicitAny: true,
         module: toSystem ? 'system' : 'commonjs',

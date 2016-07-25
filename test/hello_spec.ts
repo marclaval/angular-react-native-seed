@@ -1,9 +1,4 @@
-import {
-  async, inject, beforeEachProviders, beforeEach,
-  iit, it, xit,
-  describe, ddescribe, xdescribe,
-  expect
-} from '@angular/core/testing';
+import {async, inject, addProviders} from '@angular/core/testing';
 import {TestComponentBuilder, ComponentFixture} from '@angular/compiler/testing';
 import {Component} from '@angular/core';
 import {HelloApp} from '../src/hello';
@@ -11,8 +6,10 @@ import {getTestingProviders, MockReactNativeWrapper, ReactNativeRootRenderer, No
 
 describe('Hello', () => {
   var mock: MockReactNativeWrapper = new MockReactNativeWrapper();
-  beforeEach(() => mock.reset());
-  beforeEachProviders(() => getTestingProviders(mock, TestComponent));
+  beforeEach(() => {
+    mock.reset();
+    addProviders(getTestingProviders(mock, TestComponent));
+  });
 
   it('should render', async(inject([TestComponentBuilder, ReactNativeRootRenderer], (tcb: TestComponentBuilder, _rootRenderer: ReactNativeRootRenderer) => {
     var rootRenderer = _rootRenderer;
@@ -31,8 +28,8 @@ describe('Hello', () => {
           native-rawtext:{"text":"To show the dev menu, shake the device or press menu button on Android, or cmd + D on iOS"}
         native-text:{"testID":"Show_More","width":100,"textAlign":"center","textAlignVertical":"center","backgroundColor":"#32BAF5","padding":10,"margin":20,"color":"white"}
           native-rawtext:{"text":"Show more"}
-      native-image:{"loadingIndicatorSrc":null,"src":"./assets/angular.png","height":100,"width":100,"overflow":"hidden","position":"absolute","bottom":0,"left":0}
-      native-image:{"loadingIndicatorSrc":null,"src":"./assets/react.png","height":100,"width":100,"overflow":"hidden","position":"absolute","bottom":0,"right":0}`
+      native-image:{"loadingIndicatorSrc":null,"src":[{"uri":"./assets/angular.png"}],"height":100,"width":100,"overflow":"hidden","position":"absolute","bottom":0,"left":0}
+      native-image:{"loadingIndicatorSrc":null,"src":[{"uri":"./assets/react.png"}],"height":100,"width":100,"overflow":"hidden","position":"absolute","bottom":0,"right":0}`
         );
 
         mock.clearLogs();

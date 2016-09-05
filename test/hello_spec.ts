@@ -6,11 +6,12 @@ describe('Hello', () => {
   var mock: MockReactNativeWrapper = new MockReactNativeWrapper();
   beforeEach(() => {
     mock.reset();
-    configureTestingModule(mock, TestComponent);
+    configureTestingModule(mock, TestComponent, [HelloApp]);
   });
 
   it('should render', () => {
     const {fixture, rootRenderer} = initTest(TestComponent, `<hello-app></hello-app>`);
+    fixture.detectChanges();
     expect(mock.root.toString()).toEqual(
 `root:{}
   test-cmp:{}
@@ -42,7 +43,6 @@ describe('Hello', () => {
 
 @Component({
   selector: 'test-cmp',
-  template: `to be overriden`,
-  directives: [HelloApp]
+  template: `to be overriden`
 })
 class TestComponent {}

@@ -1,4 +1,4 @@
-import {bootstrapReactNative} from 'angular2-react-native';
-import {HelloModule} from './module';
+import {bootstrapReactNativeJIT} from 'angular2-react-native/jit';
+import {HelloModule} from './module.ios';
 
-bootstrapReactNative('ngRnSeed', HelloModule);
+bootstrapReactNativeJIT('ngRnSeed', HelloModule);

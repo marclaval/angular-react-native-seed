@@ -56,17 +56,12 @@ gulp.task('!launch.android', ['transpile'], function(done) {
 gulp.task('!launch.ios', ['transpile'], function(done) {
   executeInAppDir('react-native run-ios', done);
 });
-gulp.task('!start.android', ['!launch.android'], function(neverDone) {
-  if (!/^darwin/.test(process.platform)) {
-    executeInAppDir('react-native start');
-  }
-});
 gulp.task('watch', function(neverDone) {
   watch([PATHS.sources.src], function() {
     runSequence('transpile');
   });
 });
-gulp.task('start.android', ['!start.android', 'watch'], function (neverDone) {
+gulp.task('start.android', ['!launch.android', 'watch'], function (neverDone) {
 });
 gulp.task('start.ios', ['!launch.ios', 'watch'], function (neverDone) {
 });

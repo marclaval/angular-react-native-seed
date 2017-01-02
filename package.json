@@ -36,6 +36,6 @@
     "wd-bridge": "^0.0.2"
   },
   "dependencies": {
-    "angular2-react-native": "0.0.1-alpha.19"
+    "angular2-react-native": "0.0.1-alpha.20"
   }
 }

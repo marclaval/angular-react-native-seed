@@ -7,7 +7,7 @@ import {StyleSheet} from 'react-native';
   template: `
 <View [styleSheet]="styles.container">
   <Text [styleSheet]="styles.welcome">
-    Welcome to angular2-react-native!
+    Welcome to angular-react-native!
   </Text>
   <Text [styleSheet]="styles.instructions">
     To show the dev menu, shake the device or press menu button on Android, or cmd + D on iOS

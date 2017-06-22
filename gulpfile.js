@@ -20,7 +20,7 @@ var PATHS = {
   app: 'dist/' + APP_NAME,
   modules: [
     'node_modules/@angular/**/*',
-    'node_modules/angular2-react-native/**/*',
+    'node_modules/angular-react-native/**/*',
     'node_modules/hammerjs/**/*',
     'node_modules/reflect-metadata/**/*',
     'node_modules/rxjs/**/*',
@@ -38,8 +38,8 @@ gulp.task('!create', ['clean'], function(done) {
   executeInAppDir('react-native init ' + APP_NAME, done, true);
 });
 gulp.task('init', ['!create'], function() {
-  var copier = require('angular2-react-native/tools/copy-dependencies');
-  return copier.doCopy(PATHS.modules, PATHS.app + '/node_modules');
+  return gulp.src(PATHS.modules, { base: './node_modules/' })
+    .pipe(gulp.dest(PATHS.app + '/node_modules'));
 });
 
 

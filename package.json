@@ -1,23 +1,25 @@
 {
-  "name": "angular2-react-native-seed",
+  "name": "angular-react-native-seed",
   "version": "0.0.1-alpha.6",
-  "description": "A seed project to create a native mobile application with Angular 2 and React Native",
+  "description": "A seed project to create a native mobile application with Angular and React Native",
   "scripts": {
-    "test": "gulp test.browser/ci",
-    "postinstall": "typings install"
+    "test": "gulp test.browser/ci"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mlaval/angular2-react-native-seed.git"
+    "url": "git+https://github.com/mlaval/angular-react-native-seed.git"
   },
-  "keywords": ["Angular2", "seed", "react-native"],
+  "keywords": ["Angular", "seed", "react-native"],
   "author": "Marc Laval <mlaval>",
   "license": "Apache License Version 2.0",
   "bugs": {
-    "url": "https://github.com/mlaval/angular2-react-native-seed/issues"
+    "url": "https://github.com/mlaval/angular-react-native-seed/issues"
   },
-  "homepage": "https://github.com/mlaval/angular2-react-native-seed#readme",
+  "homepage": "https://github.com/mlaval/angular-react-native-seed#readme",
   "devDependencies": {
+    "@types/jasmine": "^2.5.52",
+    "@types/node": "^8.0.1",
+    "@types/react-native": "^0.44.10",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-filter": "^3.0.1",
@@ -36,6 +38,6 @@
     "wd-bridge": "^0.0.2"
   },
   "dependencies": {
-    "angular2-react-native": "0.0.1-alpha.20"
+    "angular-react-native": "0.0.1-alpha.21"
   }
 }

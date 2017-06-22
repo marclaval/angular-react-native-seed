@@ -1,7 +1,7 @@
 describe('Hello', () => {
   it('should render', () => {
     return wdBrowser.elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAStaticText[1]").text((err, text) => {
-      expect(text).toEqual('Welcome to angular2-react-native!');
+      expect(text).toEqual('Welcome to angular-react-native!');
     })
     .elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIAStaticText[2]").text((err, text) => {
       expect(text).toEqual('To show the dev menu, shake the device or press menu button on Android, or cmd + D on iOS');
@@ -17,7 +17,7 @@ describe('Hello', () => {
         expect(els.length).toEqual(3);
         return Promise.all([
           els[0].text().then((text) => {
-            expect(text).toEqual('Welcome to angular2-react-native!');
+            expect(text).toEqual('Welcome to angular-react-native!');
           }),
           els[1].text((err, text) => {
             expect(text).toEqual('To show the dev menu, shake the device or press menu button on Android, or cmd + D on iOS');

@@ -24,7 +24,7 @@ module.exports = function(config) {
       'node_modules/zone.js/dist/async-test.js',
       'node_modules/zone.js/dist/fake-async-test.js',
 
-      {pattern: 'node_modules/angular2-react-native/bundles/testing.dev.js', included: true, watched: true},
+      {pattern: 'node_modules/angular-react-native/bundles/testing.dev.js', included: true, watched: true},
 
       // RxJs
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
@@ -39,7 +39,7 @@ module.exports = function(config) {
       {pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false},
 
       // Our built application code
-      {pattern: 'node_modules/angular2-react-native/test_helpers/mock_react_native.js', included: false},
+      {pattern: 'node_modules/angular-react-native/test_helpers/mock_react_native.js', included: false},
       {pattern: 'dist/karma/src/**/*.js', included: false, watched: false},
       {pattern: 'dist/karma/test/**/*.js', included: false, watched: false}
     ],

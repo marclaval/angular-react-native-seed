@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {ReactNativeiOSModule} from 'angular2-react-native';
+import {ReactNativeiOSModule} from 'angular-react-native';
 import {HelloApp} from './hello';
 
 @NgModule({

@@ -9,7 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/mlaval/angular-react-native-seed.git"
   },
-  "keywords": ["Angular", "seed", "react-native"],
+  "keywords": [
+    "Angular",
+    "seed",
+    "react-native"
+  ],
   "author": "Marc Laval <mlaval>",
   "license": "Apache License Version 2.0",
   "bugs": {
@@ -17,9 +21,9 @@
   },
   "homepage": "https://github.com/mlaval/angular-react-native-seed#readme",
   "devDependencies": {
-    "@types/jasmine": "^2.5.52",
-    "@types/node": "^8.0.1",
-    "@types/react-native": "^0.44.10",
+    "@types/jasmine": "^2.5.53",
+    "@types/node": "^8.0.19",
+    "@types/react-native": "^0.46.11",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-filter": "^3.0.1",
@@ -38,6 +42,6 @@
     "wd-bridge": "^0.0.2"
   },
   "dependencies": {
-    "angular-react-native": "0.0.1-alpha.21"
+    "angular-react-native": "0.0.1-alpha.22"
   }
 }
